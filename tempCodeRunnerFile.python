@@ -1,0 +1,7 @@
+s=input()
+a=['a','e','i','o','u']
+if s in a:
+    print("vowel")
+else:
+    print("consonant") 
+

@@ -1,0 +1,117 @@
+<?php include('./constant/layout/head.php');?>
+<?php include('./constant/layout/header.php');?>
+
+<?php include('./side.php');?>   
+ 
+        <div class="page-wrapper">
+            
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-primary">Add Lead</h3> </div>
+                <div class="col-md-7 align-self-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item active">Add Lead</li>
+                    </ol>
+                </div>
+            </div>
+            
+            
+            <div class="container-fluid">
+                
+                
+                
+                
+                <div class="row">
+                    <div class="col-lg-12 mx-auto" >
+                        <div class="card">
+                            <div class="card-title">
+                               
+                            </div>
+                            <div id="add-brand-messages"></div>
+                            <div class="card-body">
+                                <div class="input-states">
+                                    <form class="row" method="POST"  id="submitBrandForm" action="php_action/create_Lead.php" enctype="multipart/form-data">
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">Lead Name</label>
+                                            <input type="text"  class="form-control" id="leadName" placeholder="Lead Name" name="lead"  required="" pattern="^[a-z A-z]+$"/>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class=" control-label">Phone</label>
+                                            <input type="text"  class="form-control"id="categoriesName" placeholder="Phone" name="phone"  required="" pattern="^[0-9]+$"/>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">Email</label>
+                                            <input type="text"  class="form-control"id="categoriesName" placeholder="Email" name="email"  required="" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">City</label>
+                                            <input type="text"  class="form-control"id="categoriesName" placeholder="City" name="city"  required="" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">Date</label>
+                                            <input type="date"  class="form-control"id="date" placeholder="City" name="date"  required="" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">Interested In</label>
+                                            <!-- <input type="text"  class="form-control"id="categoriesName" placeholder="Interested In" name="interest"  required="" pattern="^[a-z A-z]+$"/> -->
+                                            <select class="form-control" id="categoriesName" name="interest">
+                                               <option value="">~~SELECT ~~</option>
+                                               <option value="Health Insurance">Health Insurance</option>
+                                               <option value="Life Insurance">Life Insurance</option>
+                                               <option value="Motor Insurance">Motor Insurance</option>
+                                                <option value="Non Motor General Insurance">Non Motor General Insurance</option>
+                                                <option value="SIPS">SIPS</option>
+                                                <option value="Loans">Loans</option>
+                                                <option value="Credit cards">Credit cards</option>
+
+
+                                            </select>
+                                        </div>
+                                       
+                                        <div class="form-group col-md-6">
+                                            <label class=" control-label">Source</label>
+                                            <select class="form-control" id="categoriesStatus" name="source">
+                                               <option value="">~~SELECT Source~~</option>
+                                               <option value="Call">Call</option>
+                                               <option value="SocialMedia">Social Media</option>
+                                                <option value="Website">Website</option>
+                                                <option value="Campaign">Campaign</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="control-label">Requirement</label>
+                                            <input type="text"  class="form-control"id="requirement" placeholder="Requirement" name="requirement"  required="" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class=" control-label">Status</label>
+                                            <select class="form-control" id="categoriesStatus" name="status">
+                                                <option value="">~~SELECT Status~~</option>
+                                                <option value="1">New </option>
+                                                <option value="2">week</option>
+                                                <option value="3">Month</option>
+                                                <option value="4">Qualified</option>
+                                                <option value="5">Failed </option>
+                                                <option value="6">Closed  </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <button type="submit" name="create" id="createCategoriesBtn" class="btn btn-primary btn-flat m-b-30 m-t-30">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+               
+
+
+<!--  Author Name: Mayuri K. = www.mayurik.com
+ for any PHP, Codeignitor or Laravel work contact me at mayuri.infospace@gmail.com  -->
+<?php include('./constant/layout/footer.php');?>
+
+

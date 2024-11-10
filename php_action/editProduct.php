@@ -1,0 +1,32 @@
+<?php 	
+
+require_once 'core.php';
+
+$valid['success'] = array('success' => false, 'messages' => array());
+$productId = $_GET['id'];
+if($_POST) {
+	
+	$productName 		= $_POST['editProductName']; 
+  
+  $productStatus 	= $_POST['editProductStatus'];
+ 
+  
+
+				
+	$sql = "UPDATE `product` SET product_name = '$productName', active = '$productStatus' WHERE product_id = $productId ";
+
+	if($connect->query($sql) === TRUE) {
+		$valid['success'] = true;
+		$valid['messages'] = "Successfully Update";	
+		header('location:../product.php');
+	} else {
+		$valid['success'] = false;
+		$valid['messages'] = "Error while updating product info";
+	}
+
+} // /$_POST
+	 
+$connect->close();
+
+echo json_encode($valid);
+ 
