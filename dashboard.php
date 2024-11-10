@@ -206,7 +206,7 @@ $countlead = $leadquery->num_rows;
                 
         <div class="row">
             <div class="col-md-3">
-                <div class="card card-custom" style="background: linear-gradient(135deg, #FF6F61, #D7263D);">
+                <div class="card card-custom" style="background: linear-gradient(136deg, #FF6F61, #D7263D);">
                     <div class="media widget-ten align-items-center">
                         <div class="media-left">
                             <span class="material-symbols-outlined">Phone</span>
